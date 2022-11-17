@@ -1,0 +1,11 @@
+E:\suli\c#\quarto\Quarto\Quarto\bin\Debug\Quarto.exe.config
+E:\suli\c#\quarto\Quarto\Quarto\bin\Debug\Quarto.exe
+E:\suli\c#\quarto\Quarto\Quarto\bin\Debug\Quarto.pdb
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.AssemblyReference.cache
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.Login.resources
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.Properties.Resources.resources
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.GenerateResource.cache
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.CoreCompileInputs.cache
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.exe
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.pdb
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.MountainsofChina.resources
