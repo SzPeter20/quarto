@@ -61,7 +61,7 @@ namespace Quarto
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Quarto.Properties.Resources.MOCBackground;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -12);
+            this.pictureBox1.Location = new System.Drawing.Point(-9, -13);
             this.pictureBox1.MaximumSize = new System.Drawing.Size(982, 622);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(982, 622);
             this.pictureBox1.Name = "pictureBox1";
