@@ -35,6 +35,10 @@ namespace Quarto
             this.label3 = new System.Windows.Forms.Label();
             this.txtbx_fighter_1 = new System.Windows.Forms.TextBox();
             this.txtbx_fighter_2 = new System.Windows.Forms.TextBox();
+            this.blue_knight = new System.Windows.Forms.PictureBox();
+            this.pink_knight = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.blue_knight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pink_knight)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_war
@@ -43,7 +47,7 @@ namespace Quarto
             this.lbl_war.BackColor = System.Drawing.Color.Transparent;
             this.lbl_war.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbl_war.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl_war.Location = new System.Drawing.Point(71, 355);
+            this.lbl_war.Location = new System.Drawing.Point(43, 358);
             this.lbl_war.Name = "lbl_war";
             this.lbl_war.Size = new System.Drawing.Size(693, 55);
             this.lbl_war.TabIndex = 1;
@@ -91,12 +95,35 @@ namespace Quarto
             this.txtbx_fighter_2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtbx_fighter_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbx_fighter_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtbx_fighter_2.Location = new System.Drawing.Point(521, 45);
+            this.txtbx_fighter_2.Location = new System.Drawing.Point(623, 45);
             this.txtbx_fighter_2.Name = "txtbx_fighter_2";
             this.txtbx_fighter_2.Size = new System.Drawing.Size(153, 26);
             this.txtbx_fighter_2.TabIndex = 7;
             this.txtbx_fighter_2.Text = "Erwin Rommel";
             this.txtbx_fighter_2.Click += new System.EventHandler(this.txtbx_fighter_2_Click);
+            // 
+            // blue_knight
+            // 
+            this.blue_knight.BackColor = System.Drawing.Color.Transparent;
+            this.blue_knight.Image = ((System.Drawing.Image)(resources.GetObject("blue_knight.Image")));
+            this.blue_knight.Location = new System.Drawing.Point(505, 91);
+            this.blue_knight.Name = "blue_knight";
+            this.blue_knight.Size = new System.Drawing.Size(271, 246);
+            this.blue_knight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.blue_knight.TabIndex = 8;
+            this.blue_knight.TabStop = false;
+            this.blue_knight.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pink_knight
+            // 
+            this.pink_knight.BackColor = System.Drawing.Color.Transparent;
+            this.pink_knight.Image = ((System.Drawing.Image)(resources.GetObject("pink_knight.Image")));
+            this.pink_knight.Location = new System.Drawing.Point(18, 91);
+            this.pink_knight.Name = "pink_knight";
+            this.pink_knight.Size = new System.Drawing.Size(287, 246);
+            this.pink_knight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pink_knight.TabIndex = 9;
+            this.pink_knight.TabStop = false;
             // 
             // Login
             // 
@@ -105,6 +132,8 @@ namespace Quarto
             this.BackgroundImage = global::Quarto.Properties.Resources.back1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pink_knight);
+            this.Controls.Add(this.blue_knight);
             this.Controls.Add(this.txtbx_fighter_2);
             this.Controls.Add(this.txtbx_fighter_1);
             this.Controls.Add(this.label3);
@@ -118,6 +147,8 @@ namespace Quarto
             this.Text = "Bejelentkezés";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.Login_HelpButtonClicked);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.blue_knight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pink_knight)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +160,8 @@ namespace Quarto
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtbx_fighter_1;
         private System.Windows.Forms.TextBox txtbx_fighter_2;
+        private System.Windows.Forms.PictureBox blue_knight;
+        private System.Windows.Forms.PictureBox pink_knight;
     }
 }
 
