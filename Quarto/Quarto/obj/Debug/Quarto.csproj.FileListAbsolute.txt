@@ -9,3 +9,14 @@ E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.CoreCompileInputs.cache
 E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.exe
 E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.pdb
 E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.MountainsofChina.resources
+D:\GIT\quarto\Quarto\Quarto\bin\Debug\Quarto.exe.config
+D:\GIT\quarto\Quarto\Quarto\bin\Debug\Quarto.exe
+D:\GIT\quarto\Quarto\Quarto\bin\Debug\Quarto.pdb
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.csprojAssemblyReference.cache
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.Login.resources
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.MountainsofChina.resources
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.Properties.Resources.resources
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.GenerateResource.cache
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.CoreCompileInputs.cache
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.exe
+D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.pdb
