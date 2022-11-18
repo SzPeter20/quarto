@@ -12,6 +12,10 @@ namespace Quarto
 {
     public partial class MountainsofChina : Form
     {
+        public static List<string> pictureN = new List<string>
+        {
+
+        }; 
         static string warrior1;
         static string warrior2;
         static int size = 4;
