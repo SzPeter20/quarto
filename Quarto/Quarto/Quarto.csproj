@@ -93,5 +93,8 @@
   <ItemGroup>
     <None Include="Resources\back1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Background\MOCBackground.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,18 +22,21 @@ namespace Quarto
             InitializeComponent();
             generatemap();
         }
+
+
         private void generatemap()
         {
+            
             Font LargeFont = new Font("Arial", 16);
-            int x = 220;
-            int y = 55;
-            int square = 100;
+            int x = 450;
+            int y = 45;
+            int square = 120;
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
                     Label newlabel = new Label();
-                    newlabel.Location = new Point(x + i * 100, y + j * 100);
+                    newlabel.Location = new Point(x + i * 120, y + j * 120);
                     newlabel.Width = square;
                     newlabel.Height = square;
                     newlabel.BackColor = Color.Firebrick;
@@ -50,6 +53,8 @@ namespace Quarto
                 }
             }
 
+
+            pictureBox1.SendToBack();
         }
 
         private void Kattintas(object sender, EventArgs e)
@@ -61,6 +66,8 @@ namespace Quarto
         {
             warrior1 = player1;
             warrior2 = player2;
+            lbl_name_1.Text = warrior1;
+            lbl_name_2.Text = warrior2;
 
         }
 
