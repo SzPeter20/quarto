@@ -105,7 +105,7 @@ namespace Quarto
             // blue_knight
             // 
             this.blue_knight.BackColor = System.Drawing.Color.Transparent;
-            this.blue_knight.Image = ((System.Drawing.Image)(resources.GetObject("blue_knight.Image")));
+            this.blue_knight.Image = global::Quarto.Properties.Resources.blue_removebg_preview2;
             this.blue_knight.Location = new System.Drawing.Point(505, 91);
             this.blue_knight.Name = "blue_knight";
             this.blue_knight.Size = new System.Drawing.Size(271, 246);
@@ -117,7 +117,7 @@ namespace Quarto
             // pink_knight
             // 
             this.pink_knight.BackColor = System.Drawing.Color.Transparent;
-            this.pink_knight.Image = ((System.Drawing.Image)(resources.GetObject("pink_knight.Image")));
+            this.pink_knight.Image = global::Quarto.Properties.Resources.pink_removebg_preview;
             this.pink_knight.Location = new System.Drawing.Point(18, 91);
             this.pink_knight.Name = "pink_knight";
             this.pink_knight.Size = new System.Drawing.Size(287, 246);

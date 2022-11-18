@@ -60,6 +60,12 @@ namespace Quarto
         private void Kattintas(object sender, EventArgs e)
         {
             Label kattintott = sender as Label;
+
+
+
+
+
+
         }
 
         public void warriors(string player1, string player2)
