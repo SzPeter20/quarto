@@ -14,6 +14,12 @@ namespace Quarto
     {
         public static List<string> pictureN = new List<string>
         {
+            //BLUE
+            "foundation_circle","foundation_circle_blue_large_B","foundation_circle_blue_large_P","foundation_circle_blue_small_B","foundation_circle_blue_small_P",
+            "square_blue_large_B","square_blue_large_P","square_blue_small_B","square_blue_small_P",
+            //PINK
+            "CPLB","CPLP","CPSB","foundation_circle_pink","foundation_circle_pink_small_P","square_pink_large_B","square_pink_large_P","square_pink_small_B",
+            "square_pink_small_P"
 
         }; 
         static string warrior1;
