@@ -33,9 +33,13 @@ namespace Quarto
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MountainsofChina));
             this.lbl_name_1 = new System.Windows.Forms.Label();
             this.lbl_name_2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctbx_player1_piece = new System.Windows.Forms.PictureBox();
+            this.pctbx_player2_piece = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbx_player1_piece)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbx_player2_piece)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_name_1
@@ -60,18 +64,6 @@ namespace Quarto
             this.lbl_name_2.TabIndex = 1;
             this.lbl_name_2.Text = "label2";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Quarto.Properties.Resources.MOCBackground;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -10);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(982, 622);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(982, 622);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(982, 622);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -93,12 +85,44 @@ namespace Quarto
             this.imageList1.Images.SetKeyName(14, "SPSB.png");
             this.imageList1.Images.SetKeyName(15, "SPSP.png");
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Quarto.Properties.Resources.MOCBackground;
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -10);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(982, 622);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(982, 622);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(982, 622);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pctbx_player1_piece
+            // 
+            this.pctbx_player1_piece.Location = new System.Drawing.Point(543, 9);
+            this.pctbx_player1_piece.Name = "pctbx_player1_piece";
+            this.pctbx_player1_piece.Size = new System.Drawing.Size(40, 40);
+            this.pctbx_player1_piece.TabIndex = 3;
+            this.pctbx_player1_piece.TabStop = false;
+            this.pctbx_player1_piece.Visible = false;
+            // 
+            // pctbx_player2_piece
+            // 
+            this.pctbx_player2_piece.Location = new System.Drawing.Point(543, 556);
+            this.pctbx_player2_piece.Name = "pctbx_player2_piece";
+            this.pctbx_player2_piece.Size = new System.Drawing.Size(40, 40);
+            this.pctbx_player2_piece.TabIndex = 4;
+            this.pctbx_player2_piece.TabStop = false;
+            this.pctbx_player2_piece.Visible = false;
+            // 
             // MountainsofChina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(970, 605);
+            this.Controls.Add(this.pctbx_player2_piece);
+            this.Controls.Add(this.pctbx_player1_piece);
             this.Controls.Add(this.lbl_name_2);
             this.Controls.Add(this.lbl_name_1);
             this.Controls.Add(this.pictureBox1);
@@ -113,6 +137,8 @@ namespace Quarto
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.MountainsofChina_HelpButtonClicked);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MountainsofChina_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbx_player1_piece)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbx_player2_piece)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +150,7 @@ namespace Quarto
         private System.Windows.Forms.Label lbl_name_2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pctbx_player1_piece;
+        private System.Windows.Forms.PictureBox pctbx_player2_piece;
     }
 }

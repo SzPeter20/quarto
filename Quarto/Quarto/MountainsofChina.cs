@@ -13,6 +13,7 @@ namespace Quarto
     public partial class MountainsofChina : Form
     {
         static int start;
+        static int turn = 0;
         public static List<string> pictureN = new List<string>
         {
             //BLUE
@@ -24,7 +25,7 @@ namespace Quarto
         static string warrior1;
         static string warrior2;
         static int size = 4;
-        static Label[,] labelek=new Label[size,size];
+        static PictureBox[,] imageek=new PictureBox[size,size];
 
         public MountainsofChina()
         {
@@ -35,6 +36,15 @@ namespace Quarto
 
         private void turns()
         {
+            if (start==1)
+            {
+                turn = 1;   
+            }
+            else if(start==2)
+            {
+                turn = 2;
+            }
+
 
         }
 
@@ -43,7 +53,7 @@ namespace Quarto
             
             Font LargeFont = new Font("Arial", 16);
             int x = 450;
-            int y = 70;
+            int y = 65;
             int picssquare = 40;
             int square = 120;
             int counter = 0;
@@ -51,20 +61,16 @@ namespace Quarto
             {
                 for (int j = 0; j < size; j++)
                 {
-                    Label newlabel = new Label();
-                    newlabel.Location = new Point(x + i * 120, y + j * 120);
-                    newlabel.Width = square;
-                    newlabel.Height = square;
-                    newlabel.BackColor = Color.Firebrick;
-                    newlabel.BorderStyle = BorderStyle.FixedSingle;
-                    newlabel.Name = i + "_" + j;
-                    newlabel.Text = "";
-                    newlabel.AutoSize = false;
-                    newlabel.Font = LargeFont;
-                    newlabel.TextAlign = ContentAlignment.MiddleCenter;
-                    newlabel.Click += new EventHandler(Kattintas);
-                    this.Controls.Add(newlabel);
-                    labelek[i, j] = newlabel;
+                    PictureBox newmappiece = new PictureBox();
+                    newmappiece.Location = new Point(x + i * 120, y + j * 120);
+                    newmappiece.Width = square;
+                    newmappiece.Height = square;
+                    newmappiece.BackColor = Color.Firebrick;
+                    newmappiece.BorderStyle = BorderStyle.FixedSingle;
+                    newmappiece.Name = i + "_" + j;
+                    newmappiece.Click += new EventHandler(Kattintas);
+                    this.Controls.Add(newmappiece);
+                    imageek[i, j] = newmappiece;
 
                 }
             }
@@ -92,11 +98,27 @@ namespace Quarto
         private void ChooseKatt(object sender, EventArgs e)
         {
             PictureBox kattintottpic = sender as PictureBox;
+            if (turn==1)
+            {
+                imagecsere(pctbx_player1_piece,kattintottpic );
+            }
+            else
+            {
+                imagecsere(pctbx_player2_piece, kattintottpic);
+            }
+        }
+
+        private void imagecsere(PictureBox pctbx_player1_piec, PictureBox katt)
+        {
+            pctbx_player1_piec.Image = katt.Image;
         }
 
         private void Kattintas(object sender, EventArgs e)
         {
             Label kattintott = sender as Label;
+
+
+
 
         }
 
