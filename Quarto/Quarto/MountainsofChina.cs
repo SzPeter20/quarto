@@ -12,14 +12,13 @@ namespace Quarto
 {
     public partial class MountainsofChina : Form
     {
+        static int start;
         public static List<string> pictureN = new List<string>
         {
             //BLUE
-            "foundation_circle","foundation_circle_blue_large_B","foundation_circle_blue_large_P","foundation_circle_blue_small_B","foundation_circle_blue_small_P",
-            "square_blue_large_B","square_blue_large_P","square_blue_small_B","square_blue_small_P",
+            "CBLB","CBLP","CBSB","CBSP","SBLB","SBLP","SBSB","SBSP",
             //PINK
-            "CPLB","CPLP","CPSB","foundation_circle_pink","foundation_circle_pink_small_P","square_pink_large_B","square_pink_large_P","square_pink_small_B",
-            "square_pink_small_P"
+            "CPLB","CPLP","CPSB","CPSP","SPLB","SPLP","SPSB","SPSP"
 
         }; 
         static string warrior1;
@@ -31,16 +30,23 @@ namespace Quarto
         {
             InitializeComponent();
             generatemap();
+            turns();
         }
 
+        private void turns()
+        {
+
+        }
 
         private void generatemap()
         {
             
             Font LargeFont = new Font("Arial", 16);
             int x = 450;
-            int y = 45;
+            int y = 70;
+            int picssquare = 40;
             int square = 120;
+            int counter = 0;
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
@@ -62,29 +68,45 @@ namespace Quarto
 
                 }
             }
+            for (int i = 1; i < 3; i++)
+            {
+                for (int j = 1; j < 9; j++)
+                {
+                    PictureBox newpicture = new PictureBox();
+                    newpicture.Location = new Point(50*i, 50*j);
+                    newpicture.Width = picssquare;
+                    newpicture.Height = picssquare;
+                    newpicture.SizeMode=PictureBoxSizeMode.Zoom;
+                    newpicture.Name = imageList1.Images.Keys[counter].ToString().Split('.')[0];
+                    newpicture.Image = imageList1.Images[counter];
+                    newpicture.Click += new EventHandler(ChooseKatt);
+                    this.Controls.Add(newpicture);
+                    counter++;
+                }
+            }
 
 
             pictureBox1.SendToBack();
+        }
+
+        private void ChooseKatt(object sender, EventArgs e)
+        {
+            PictureBox kattintottpic = sender as PictureBox;
         }
 
         private void Kattintas(object sender, EventArgs e)
         {
             Label kattintott = sender as Label;
 
-
-
-
-
-
         }
 
-        public void warriors(string player1, string player2)
+        public void warriors(string player1, string player2,int whostarts)
         {
             warrior1 = player1;
             warrior2 = player2;
             lbl_name_1.Text = warrior1;
             lbl_name_2.Text = warrior2;
-
+            start = whostarts;
         }
 
         private void MountainsofChina_HelpButtonClicked(object sender, CancelEventArgs e)

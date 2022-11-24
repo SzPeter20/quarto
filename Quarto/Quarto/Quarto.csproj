@@ -102,5 +102,62 @@
   <ItemGroup>
     <None Include="bin\Debug\pinks\pink-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\CPLB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\CPLP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\CPSB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\CPSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\SPLB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\SPLP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\SPSB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pinks\SPSP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\foundation_circle_blue_large_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\foundation_circle_blue_large_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\foundation_circle_blue_small_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\foundation_circle_blue_small_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\square_blue_large_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\square_blue_large_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\square_blue_small_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blues\square_blue_small_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Background\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Background\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Background\arrow_right.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

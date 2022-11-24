@@ -37,8 +37,10 @@ namespace Quarto
             this.txtbx_fighter_2 = new System.Windows.Forms.TextBox();
             this.blue_knight = new System.Windows.Forms.PictureBox();
             this.pink_knight = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.blue_knight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pink_knight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_war
@@ -124,6 +126,18 @@ namespace Quarto
             this.pink_knight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pink_knight.TabIndex = 9;
             this.pink_knight.TabStop = false;
+            this.pink_knight.Click += new System.EventHandler(this.pink_knight_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Quarto.Properties.Resources.arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(279, 81);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(239, 239);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -132,6 +146,7 @@ namespace Quarto
             this.BackgroundImage = global::Quarto.Properties.Resources.back1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pink_knight);
             this.Controls.Add(this.blue_knight);
             this.Controls.Add(this.txtbx_fighter_2);
@@ -151,6 +166,7 @@ namespace Quarto
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.blue_knight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pink_knight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +180,7 @@ namespace Quarto
         private System.Windows.Forms.TextBox txtbx_fighter_2;
         private System.Windows.Forms.PictureBox blue_knight;
         private System.Windows.Forms.PictureBox pink_knight;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

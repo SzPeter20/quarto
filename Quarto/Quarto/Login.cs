@@ -16,6 +16,7 @@ namespace Quarto
         static int start2 = 0;
         static string name1 = "";
         static string name2 = "";
+        static int whostarts = 1;
         public Login()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace Quarto
             }
 
             this.Hide();
-            uj.warriors(name1, name2);
+            uj.warriors(name1, name2,whostarts);
             uj.Show();
 
         }
@@ -79,7 +80,14 @@ namespace Quarto
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            whostarts = 2;
+            pictureBox1.Image = Properties.Resources.arrow_right;
+        }
 
+        private void pink_knight_Click(object sender, EventArgs e)
+        {
+            whostarts = 1;
+            pictureBox1.Image = Properties.Resources.arrow_left;
         }
     }
 }
