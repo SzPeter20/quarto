@@ -21,7 +21,9 @@ namespace Quarto
             "CPLB","CPLP","CPSB","foundation_circle_pink","foundation_circle_pink_small_P","square_pink_large_B","square_pink_large_P","square_pink_small_B",
             "square_pink_small_P"
 
-        }; 
+        };
+        protected Graphics myGraphics;
+        private int currentImage = 0;
         static string warrior1;
         static string warrior2;
         static int size = 4;
@@ -29,6 +31,9 @@ namespace Quarto
 
         public MountainsofChina()
         {
+            imageList1.ImageSize = new Size(255, 255);
+            imageList1.TransparentColor = Color.White;
+            myGraphics = Graphics.FromHwnd(panel1.Handle);
             InitializeComponent();
             generatemap();
         }
@@ -96,5 +101,31 @@ namespace Quarto
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (imageList1.Images.Empty != true)
+            {
+                if (imageList1.Images.Count - 1 > currentImage)
+                {
+                    currentImage++;
+                }
+                else
+                {
+                    currentImage = 0;
+                }
+                panel1.Refresh();
+
+                // Draw the image in the panel.
+                imageList1.Draw(myGraphics, 10, 10, currentImage);
+
+                // Show the image in the PictureBox.
+                pictureBox1.Image = imageList1.Images[currentImage];
+                label3.Text = "Current image is " + currentImage;
+                listBox1.SelectedIndex = currentImage;
+                label5.Text = "Image is " + listBox1.Text;
+            }
+        }
     }
-}
+    }
+
