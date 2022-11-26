@@ -40,9 +40,12 @@ namespace Quarto
             this.pctbx_player2_piece = new System.Windows.Forms.PictureBox();
             this.lbl_player1_picebane = new System.Windows.Forms.Label();
             this.lbl_player2_picebane = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_player1_piece)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_player2_piece)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_name_1
@@ -92,10 +95,10 @@ namespace Quarto
             // 
             this.pictureBox1.Image = global::Quarto.Properties.Resources.MOCBackground;
             this.pictureBox1.Location = new System.Drawing.Point(-6, -10);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(982, 622);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(982, 622);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(1100, 622);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(1100, 622);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(982, 622);
+            this.pictureBox1.Size = new System.Drawing.Size(1100, 622);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -150,12 +153,35 @@ namespace Quarto
             this.lbl_player2_picebane.Text = "label2";
             this.lbl_player2_picebane.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(304, 347);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "label2";
+            this.label2.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Location = new System.Drawing.Point(940, 308);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // MountainsofChina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(970, 605);
+            this.ClientSize = new System.Drawing.Size(1084, 601);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_player2_picebane);
             this.Controls.Add(this.lbl_player1_picebane);
             this.Controls.Add(this.pctbx_player2_piece);
@@ -167,9 +193,9 @@ namespace Quarto
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(986, 644);
+            this.MaximumSize = new System.Drawing.Size(1100, 640);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(986, 644);
+            this.MinimumSize = new System.Drawing.Size(1100, 640);
             this.Name = "MountainsofChina";
             this.Text = "Mountains of China";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.MountainsofChina_HelpButtonClicked);
@@ -177,6 +203,7 @@ namespace Quarto
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_player1_piece)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbx_player2_piece)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +220,7 @@ namespace Quarto
         private System.Windows.Forms.PictureBox pctbx_player2_piece;
         private System.Windows.Forms.Label lbl_player1_picebane;
         private System.Windows.Forms.Label lbl_player2_picebane;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

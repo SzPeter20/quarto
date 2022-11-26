@@ -30,7 +30,6 @@ namespace Quarto
         public MountainsofChina()
         {
             InitializeComponent();
-            idegosszeroppanasomazagyfaszmogottbujkal();
             
         }
 
@@ -50,8 +49,6 @@ namespace Quarto
             {
                 turn = 2;
             }
-
-
         }
 
         private void generatemap()
@@ -127,7 +124,6 @@ namespace Quarto
             pctbx_player_piece.Image = katt.Image;
             katt.Visible = false;
             pctbx_player_piece.Visible = true;
-
         }
 
         private void Kattintas(object sender, EventArgs e)
@@ -141,57 +137,284 @@ namespace Quarto
                     pctbx_player1_piece.Image = null;
                     kattintott.Text = lbl_player1_picebane.Text;
                     lbl_player1_picebane.Text = "";
+                    label2.Text = kattintott.Text;
+                    victory(turn);
+                    turn = 1;
                 }
-                victory(turn);
-                turn = 1;
+                
             }
             else if (turn==4)
             {
-                kattintott.Image = pctbx_player2_piece.Image;
-                pctbx_player2_piece.Image = null;
-                kattintott.Text = lbl_player2_picebane.Text;
-                lbl_player2_picebane.Text = "";
-
-                victory(turn);
-                turn = 2;
+                if (kattintott.Text == "")
+                {
+                    kattintott.Image = pctbx_player2_piece.Image;
+                    pctbx_player2_piece.Image = null;
+                    kattintott.Text = lbl_player2_picebane.Text;
+                    lbl_player2_picebane.Text = "";
+                    label2.Text = kattintott.Text;
+                    victory(turn);
+                    turn = 2;
+                }
             }
-
-
-
         }
 
         private void victory(int turn)
         {
-            string size = "";
+            string picsize = "";
             string color = "";
             string shape = "";
             string letter = "";
             bool nyert = false;
-            for (int i = 0; i < 4; i++)
+
+            for (int i = 0; i < size; i++)
+            {
+                if (imageek[i, i].Text.Length != 0)
+                {
+                    shape += imageek[i, i].Text[0].ToString();
+                }
+                else
+                {
+                    shape += ".";
+                }
+                if (imageek[i, i].Text.Length != 0)
+                {
+                    color += imageek[i, i].Text[1].ToString();
+                }
+                else
+                {
+                    color += ".";
+                }
+                if (imageek[i, i].Text.Length != 0)
+                {
+                    picsize += imageek[i, i].Text[2].ToString();
+                }
+                else
+                {
+                    picsize += ".";
+                }
+                if (imageek[i, i].Text.Length != 0)
+                {
+                    letter += imageek[i, i].Text[3].ToString();
+                }
+                else
+                {
+                    letter += ".";
+                }
+            }
+            if (shape[0] == shape[1] && shape[1] == shape[2] && shape[2] == shape[3] && shape[0] != '.')
+            {
+                nyert = true;
+            }
+            if (color[0] == color[1] && color[1] == color[2] && color[2] == color[3] && color[0] != '.')
+            {
+                nyert = true;
+            }
+            if (picsize[0] == picsize[1] && picsize[1] == picsize[2] && picsize[2] == picsize[3] && picsize[0] != '.')
+            {
+                nyert = true;
+            }
+            if (letter[0] == letter[1] && letter[1] == letter[2] && letter[2] == letter[3] && letter[0] != '.')
+            {
+                nyert = true;
+            }
+
+            picsize = "";
+            color = "";
+            shape = "";
+            letter = "";
+
+
+            for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    shape += imageek[i, j].Text[0];
-                    color += imageek[i, j].Text[1];
-                    size += imageek[i, j].Text[2];
-                    letter += imageek[i, j].Text[3];
-                }
+                    if (imageek[i, j].Text.Length!=0)
+                    {
+                        shape += imageek[i, j].Text[0].ToString();
+                    }
+                    else
+                    {
+                        shape += ".";
+                    }
+                    if (imageek[i, j].Text.Length != 0)
+                    {
+                        color += imageek[i, j].Text[1].ToString();
+                    }
+                    else
+                    {
+                        color += ".";
+                    }
+                    if (imageek[i, j].Text.Length != 0)
+                    {
+                        picsize += imageek[i, j].Text[2].ToString();
+                    }
+                    else
+                    {
+                        picsize += ".";
+                    }
+                    if (imageek[i, j].Text.Length != 0)
+                    {
+                        letter += imageek[i, j].Text[3].ToString();
+                    }
+                    else
+                    {
+                        letter += ".";
+                    }
 
+                }
+                if (shape[0]==shape[1]&&shape[1]==shape[2]&&shape[2]==shape[3]&&shape[0]!='.')
+                {
+                    nyert = true;
+                }
+                if (color[0] == color[1] && color[1] == color[2] && color[2] == color[3] && color[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (picsize[0] == picsize[1] && picsize[1] == picsize[2] && picsize[2] == picsize[3] && picsize[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (letter[0] == letter[1] && letter[1] == letter[2] && letter[2] == letter[3] && letter[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (!nyert)
+                {
+                     picsize = "";
+                     color = "";
+                     shape = "";
+                     letter = "";
+                }
+                else
+                {
+                    break;
+                }
             }
 
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (imageek[j, i].Text.Length != 0)
+                    {
+                        shape += imageek[j, i].Text[0].ToString();
+                    }
+                    else
+                    {
+                        shape += ".";
+                    }
+                    if (imageek[j, i].Text.Length != 0)
+                    {
+                        color += imageek[j, i].Text[1].ToString();
+                    }
+                    else
+                    {
+                        color += ".";
+                    }
+                    if (imageek[j, i].Text.Length != 0)
+                    {
+                        picsize += imageek[j, i].Text[2].ToString();
+                    }
+                    else
+                    {
+                        picsize += ".";
+                    }
+                    if (imageek[j, i].Text.Length != 0)
+                    {
+                        letter += imageek[j, i].Text[3].ToString();
+                    }
+                    else
+                    {
+                        letter += ".";
+                    }
+                }
+                if (shape[0] == shape[1] && shape[1] == shape[2] && shape[2] == shape[3] && shape[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (color[0] == color[1] && color[1] == color[2] && color[2] == color[3] && color[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (picsize[0] == picsize[1] && picsize[1] == picsize[2] && picsize[2] == picsize[3] && picsize[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (letter[0] == letter[1] && letter[1] == letter[2] && letter[2] == letter[3] && letter[0] != '.')
+                {
+                    nyert = true;
+                }
+                if (!nyert)
+                {
+                    picsize = "";
+                    color = "";
+                    shape = "";
+                    letter = "";
+                }
+                else
+                {
+                    break;
+                }
+            }
 
+            int k= 3;
+            for (int i = 0; i < size; i++)
+            {
+                if (imageek[i, k].Text.Length != 0)
+                {
+                    shape += imageek[i, k].Text[0].ToString();
+                }
+                else
+                {
+                    shape += ".";
+                }
+                if (imageek[i, k].Text.Length != 0)
+                {
+                    color += imageek[i, k].Text[1].ToString();
+                }
+                else
+                {
+                    color += ".";
+                }
+                if (imageek[i, k].Text.Length != 0)
+                {
+                    picsize += imageek[i, k].Text[2].ToString();
+                }
+                else
+                {
+                    picsize += ".";
+                }
+                if (imageek[i, k].Text.Length != 0)
+                {
+                    letter += imageek[i, k].Text[3].ToString();
+                }
+                else
+                {
+                    letter += ".";
+                }
+                k--;
+            }
+            if (shape[0] == shape[1] && shape[1] == shape[2] && shape[2] == shape[3] && shape[0] != '.')
+            {
+                nyert = true;
+            }
+            if (color[0] == color[1] && color[1] == color[2] && color[2] == color[3] && color[0] != '.')
+            {
+                nyert = true;
+            }
+            if (picsize[0] == picsize[1] && picsize[1] == picsize[2] && picsize[2] == picsize[3] && picsize[0] != '.')
+            {
+                nyert = true;
+            }
+            if (letter[0] == letter[1] && letter[1] == letter[2] && letter[2] == letter[3] && letter[0] != '.')
+            {
+                nyert = true;
+            }
 
-
-
-
-
-
-
-
-
-
-
-
+            picsize = "";
+            color = "";
+            shape = "";
+            letter = "";
 
             {
                 string message = "";
