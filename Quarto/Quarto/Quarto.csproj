@@ -159,5 +159,8 @@
   <ItemGroup>
     <None Include="bin\Debug\Background\arrow_right.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Background\arrow_down.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

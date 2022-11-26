@@ -41,13 +41,22 @@ namespace Quarto
 
         private void turns()
         {
+            /*
+            if (turn == 1 || turn == 3)
+            {
+                pctbx_starter.Image = Properties.Resources.arrow;
+            }
+            */
             if (start==1)
             {
-                turn = 1;   
+                turn = 1;
+                pctbx_starter.Image = Properties.Resources.arrow;
+                
             }
             else if(start==2)
             {
                 turn = 2;
+                pctbx_starter.Image = Properties.Resources.arrow_down;
             }
         }
 
@@ -97,7 +106,6 @@ namespace Quarto
             }
 
 
-            pictureBox1.SendToBack();
         }
 
         private void ChooseKatt(object sender, EventArgs e)
@@ -107,11 +115,13 @@ namespace Quarto
             if (turn==1)
             {
                 imagecsere(pctbx_player2_piece,kattintottpic , lbl_player2_picebane);
+                pctbx_starter.Image = Properties.Resources.arrow_down;
                 turn = 4;
             }
             else if(turn==2)
             {
                 imagecsere(pctbx_player1_piece, kattintottpic, lbl_player1_picebane);
+                pctbx_starter.Image = Properties.Resources.arrow;
                 turn = 3;
             }
         }
@@ -131,6 +141,7 @@ namespace Quarto
             Label kattintott = sender as Label;
             if (turn==3)
             {
+                pctbx_starter.Image = Properties.Resources.arrow;
                 if (kattintott.Text=="")
                 {
                     kattintott.Image = pctbx_player1_piece.Image;
@@ -139,12 +150,14 @@ namespace Quarto
                     lbl_player1_picebane.Text = "";
                     label2.Text = kattintott.Text;
                     victory(turn);
+                    
                     turn = 1;
                 }
                 
             }
             else if (turn==4)
             {
+                pctbx_starter.Image = Properties.Resources.arrow_down;
                 if (kattintott.Text == "")
                 {
                     kattintott.Image = pctbx_player2_piece.Image;
@@ -153,6 +166,7 @@ namespace Quarto
                     lbl_player2_picebane.Text = "";
                     label2.Text = kattintott.Text;
                     victory(turn);
+                    
                     turn = 2;
                 }
             }
@@ -461,6 +475,14 @@ namespace Quarto
             lbl_name_1.Text = warrior1;
             lbl_name_2.Text = warrior2;
             label1.Text = whostarts.ToString();
+            if (whostarts==1)
+            {
+                pctbx_starter.Image = Properties.Resources.arrow;
+            }
+            else if (whostarts==2)
+            {
+                pctbx_starter.Image = Properties.Resources.arrow_down;
+            }
             start =Convert.ToInt32( label1.Text);
             idegosszeroppanasomazagyfaszmogottbujkal();
 
