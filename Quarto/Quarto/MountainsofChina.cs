@@ -178,6 +178,7 @@ namespace Quarto
             string color = "";
             string shape = "";
             string letter = "";
+            bool vanlepes = false;
             bool nyert = false;
 
             for (int i = 0; i < size; i++)
@@ -298,10 +299,6 @@ namespace Quarto
                      color = "";
                      shape = "";
                      letter = "";
-                }
-                else
-                {
-                    break;
                 }
             }
 
@@ -450,7 +447,33 @@ namespace Quarto
                     this.Hide();
                 }
             }
-            
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (imageek[i, j].Text == "")
+                    {
+                        vanlepes = true;
+                    } 
+                }
+            }
+
+
+            if (!nyert&&!vanlepes)
+            {
+                string message = " Döntetlen!  Szeretnétek újat játszani?";
+                string title = "jéj  mindketten nyertetek";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(message, title, buttons);
+                if (result == DialogResult.No)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    Application.Restart();
+                }
+            }
         }
 
         public void warriors(string player1, string player2,int whostarts)
