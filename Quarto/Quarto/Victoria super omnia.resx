@@ -117,56 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="blue-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\blues\blue-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPLB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\SPLB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Background\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Background\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Background\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Background\arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CPSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\CPSB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CPLP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\CPLP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\SPSP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\SPSB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pink-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\pink-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MOCBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Background\MOCBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CPLB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\CPLB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CPSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\CPSP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPLP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\pinks\SPLP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="crown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///////////7+/v//////8vP3/4eQs/9bY4v/YWeN/2Bkjf9fZpH/k5u9//f3+f///////v7/////
+        ///////////////////+/v7//////+rs8v83QXn/N2qX/zdwpf8+faz/QHKe/0lSjP/09fj///////7+
+        /v//////////////////////////////////////aXCh/zl0q/9RqNj/deb3/2CsyP92eKr///////7+
+        /v/////////////////////////////////+/v7//////2h3p/8cN2P/O199/05wh/8mRW7/cHym////
+        ///9/f7//////////////////////////////////P39//////+bpbz/N2+Z/4K/2P+X1O3/OHCb/6qx
+        xP///////P39/////////////////////////////////////////////////+Lp8P+EutX/iLrX/+fr
+        8f///////v////////////////////////////////////////////////////v8/f//////rcre/7fR
+        4///////+/z9//////////////////////////////////////////////////3+/v/////////+/3Oh
+        xv+ArM3///////7+///9/v7///////////////////////////////////////7+/v/9/v//6/P4/3qa
+        uf9Pmsn/TqDS/5e71P/u9fr//v7///7+/v////////////////////////////7+/////v7/zen2/2qf
+        wP8+d6H/dLXR/4fT8P9AfKT/eKvK/9Pq9v////7//v7///////////////////3+/v//////t9Pj/7/e
+        6/+bt83/VJK0/2ibuv+j5vz/TpG1/67E0v+32ur/wNnm///////9/v7///////7+////////5u/2/5rB
+        1///////e63K/1yYtv9ij6//tvH//1qjxP98nbb//////5W91P/v9fn///////7////9/f7//////73X
+        6P/V4+3//////3G11P9elbL/XoOk/83+//9nttX/XYip///////L3Or/xdzr///////9/v7//f7+////
+        //+hyeb/vd3w/2+lyv9Egq3/XZq3/1uEpP+o3+7/asDe/y9jjP96rs//u9vv/6fN5////////P3+//7/
+        ////////1+v1/7Hb8P+62+v/aoup/1WOuP9uvdr/TW2N/2CVtv9skKf/vN3t/7Db7//c7vb///////7+
+        ///////////////////////////////+/v/0+f3/7vr9/+zw9P/2+vz/////////////////////////
+        ////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
   </data>
 </root>

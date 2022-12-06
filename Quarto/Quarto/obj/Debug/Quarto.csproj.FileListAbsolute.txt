@@ -20,3 +20,4 @@ D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.GenerateResource.cache
 D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.csproj.CoreCompileInputs.cache
 D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.exe
 D:\GIT\quarto\Quarto\Quarto\obj\Debug\Quarto.pdb
+E:\suli\c#\quarto\Quarto\Quarto\obj\Debug\Quarto.Victoria_super_omnia.resources

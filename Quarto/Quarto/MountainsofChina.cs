@@ -431,38 +431,23 @@ namespace Quarto
             letter = "";
 
             {
-                string message = "";
+                
                 
 
                 if (nyert && turn == 3)
                 {
-                    message = lbl_name_1.Text + " a nyertes!  Szeretnétek újat játszani?";
-                    string title = "jéj  nyertél";
-                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                    DialogResult result = MessageBox.Show(message, title, buttons);
-                    if (result == DialogResult.No)
-                    {
-                        Application.Exit();
-                    }
-                    else
-                    {
-                        Application.Restart();
-                    }
+                    Victoria_super_omnia gyozelem = new Victoria_super_omnia();
+                    gyozelem.gyoztes(lbl_name_1.Text, lbl_name_2.Text, turn);
+                    gyozelem.Show();
+                    this.Hide();
+                    
                 }
                 else if (nyert && turn == 4)
                 {
-                    message = lbl_name_2.Text + " a nyertes!  Szeretnétek újat játszani?";
-                    string title = "jéj  nyertél";
-                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                    DialogResult result = MessageBox.Show(message, title, buttons);
-                    if (result == DialogResult.No)
-                    {
-                        Application.Exit();
-                    }
-                    else
-                    {
-                        Application.Restart();
-                    }
+                    Victoria_super_omnia gyozelem = new Victoria_super_omnia();
+                    gyozelem.gyoztes(lbl_name_1.Text, lbl_name_2.Text, turn);
+                    gyozelem.Show();
+                    this.Hide();
                 }
             }
             

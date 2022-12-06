@@ -20,6 +20,7 @@ namespace Quarto
         public Login()
         {
             InitializeComponent();
+            
         }
 
         private void lbl_war_Click(object sender, EventArgs e)

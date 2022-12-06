@@ -184,6 +184,7 @@ namespace Quarto
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1100, 640);
             this.Name = "MountainsofChina";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mountains of China";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.MountainsofChina_HelpButtonClicked);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MountainsofChina_FormClosing);
